@@ -57,12 +57,14 @@
 </style>
 
 <main>
+
   <h1>Jaeder42</h1>
   <nav>
     <a href="/">Home</a>
     <a href="#/devlog">DevLog</a>
     <a href="#/portfolio">Stuff</a>
   </nav>
+
   <content>
     <Router {routes} />
   </content>

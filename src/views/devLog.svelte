@@ -70,6 +70,7 @@
       </post>
     {/each}
   {/if}
-  {#if !posts}...loading{/if}
-
+  {#if !posts}
+    <h2>Loading...</h2>
+  {/if}
 </main>

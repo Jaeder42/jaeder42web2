@@ -1,5 +1,6 @@
 <script>
   import axios from "axios";
+  import dayjs from "dayjs";
   export let params = {};
   let post = null;
   const getPost = async () => {
@@ -28,6 +29,24 @@
   content {
     display: flex;
     overflow-x: hidden;
+    text-align: left;
+    max-width: 600px;
+  }
+  post {
+    display: flex;
+    flex-direction: column;
+  }
+  postTitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-right: 6px;
+  }
+  row {
+    display: flex;
   }
 </style>
 
@@ -35,8 +54,16 @@
   <content>
     {#if post}
       <post>
+        <postTitle>{post.title}</postTitle>
+        <row>
+          <subtitle>{post.subTitle}{' '}</subtitle>
+          <subtitle>{dayjs(post.date).format('YYYY-MM-DD')}</subtitle>
+        </row>
         {@html post.content}
       </post>
+    {/if}
+    {#if !post}
+      <h2>Loading...</h2>
     {/if}
   </content>
 </main>
