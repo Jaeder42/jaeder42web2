@@ -22,6 +22,7 @@
     padding: 1em;
     max-width: 240px;
     margin: 0 auto;
+    min-height: calc(100vh - 40px);
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -54,6 +55,11 @@
   a {
     margin: 0 15px;
   }
+
+  footer {
+    bottom: 5px;
+    right: 5px;
+  }
 </style>
 
 <main>
@@ -68,4 +74,5 @@
   <content>
     <Router {routes} />
   </content>
+  <footer>© Johan Jäderblom Krosby, 2019</footer>
 </main>
