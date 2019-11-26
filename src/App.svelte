@@ -64,7 +64,7 @@
 
 <main>
 
-  <h1>Jaeder42</h1>
+  <h1>Jæder42</h1>
   <nav>
     <a href="/">Home</a>
     <a href="#/devlog">DevLog</a>
