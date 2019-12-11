@@ -6,12 +6,14 @@
   import Portfolio from "./views/portfolio.svelte";
   import Post from "./views/post.svelte";
   import StateTrak from "./views/statetrak.svelte";
+  import Tag from './views/tag.svelte'
   const routes = {
     "/": Home,
     "/devlog": DevLog,
     "/portfolio": Portfolio,
     "/statetrak": StateTrak,
     "/post/:id": Post,
+    '/tag': Tag,
     "*": NotFound
   };
 </script>
@@ -20,7 +22,7 @@
   main {
     text-align: center;
     padding: 1em;
-    max-width: 240px;
+    max-width: 400px;
     margin: 0 auto;
     min-height: calc(100vh - 40px);
     display: flex;
