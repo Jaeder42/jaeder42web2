@@ -56,7 +56,7 @@
       <post>
         <postTitle>{post.title}</postTitle>
         <row>
-          <subtitle>{post.subTitle}{' '}</subtitle>
+          <subtitle>{post.subTitle}{', '}</subtitle>
           <subtitle>{dayjs(post.date).format('YYYY-MM-DD')}</subtitle>
         </row>
         {@html post.content}

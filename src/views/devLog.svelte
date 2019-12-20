@@ -33,9 +33,9 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 20px 20px;
-    max-width: 200px;
+    width: 200px;
     border: 1px solid #3a3347;
-    min-height: 100px;
+    height: 100px;
     border-radius: 10px;
     padding: 20px;
     -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
@@ -49,7 +49,6 @@
 
   post:hover {
     filter: none;
-    transform: scale(1.1);
   }
 
   postTitle {
