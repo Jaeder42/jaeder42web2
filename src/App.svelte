@@ -6,14 +6,16 @@
   import Portfolio from "./views/portfolio.svelte";
   import Post from "./views/post.svelte";
   import StateTrak from "./views/statetrak.svelte";
-  import Tag from './views/tag.svelte'
+  import Tag from "./views/tag.svelte";
+  import Covid from "./views/covid.svelte";
   const routes = {
     "/": Home,
     "/devlog": DevLog,
     "/portfolio": Portfolio,
     "/statetrak": StateTrak,
     "/post/:id": Post,
-    '/tag': Tag,
+    "/tag": Tag,
+    "/covid": Covid,
     "*": NotFound
   };
 </script>
@@ -76,5 +78,5 @@
   <content>
     <Router {routes} />
   </content>
-  <footer>© Johan Jäderblom Krosby, 2019</footer>
+  <footer>© Johan Jäderblom Krosby, 2020</footer>
 </main>
